@@ -9,18 +9,15 @@ public class ModeloDB extends ModeloAbs
     private Statement stmt = null;
         private String servidor = "jdbc:mysql://localhost/Productosdb";
     private String usuario = "root";
-    private String contraseña = "alumno";
-    /**
-     * Constructor for objects of class ModeloDB
-     * Establece la conexion a la base de datos
-     */
+    private String contraseña = "root";
+  
+  
     public ModeloDB()
     {
         try {
       Class.forName("com.mysql.jdbc.Driver");
        } catch (ClassNotFoundException e) {
      System.err.println("ERROR AL REGISTRAR EL DRIVER");
-     System.exit(0); // parar la ejecución
     }
     
     //establecer conexion
